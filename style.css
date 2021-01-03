@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: #42455a;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;  
+    font-family: 'Kanit', sans-serif;
+}
+.menu ul li:hover{ 
+    outline-color: linear-gradient(to right, #db1bf6, #19d7f8);
+    color: #fff;
+    transition: .5s;
+    
+
+}
+.logo img{
+    width: 50px;
+    margin-top: -15px;
+    margin-right: 48px;
+}
+.active{
+    color: #19dafa !important;
+}
+
+.gomb{
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a,#42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.gomb span{
+    display: block;
+    padding: 8px 20px;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 10%;
+    position: absolute;
+    color: #fff;
+}
+.banner2{
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    color: #fff;
+    box-sizing: border-box;
+}
+.gallery{
+    border: none;  
+    width: 130%;
+    overflow: hidden;
+    text-align: center;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+
+}
+.gallery img:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.autonev{
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.Responsiv{
+    padding: 0 25px;
+    float: left;
+    width: 25%;
+}
+@media only screen and (max-width: 700px) {
+    .Responsiv{
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .Responsiv{
+        width: 100%;
+    }
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.app-text p1{
+    font-size: 25px;
+    width: 650px;
+    margin: 30px 0 30px 40px;
+    line-height: 80px;
+}
+.app-text p2{
+    font-size: 20px;
+    width: 650px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+.app-text p3{
+    font-size: 50px;
+    width: 650px;
+    margin: 30px 0 30px 40px;
+    line-height: 50px; 
+}
+.picture img{
+    width: 50%;
+    float: left; 
+    cursor: pointer;
+}
+.picture2 img{
+    width: 50%;
+    float: left;
+    cursor: pointer;
+    
+}
+.tervgomb{
+    margin-left: 40px;
+    display: flex;
+}
+.tervgomb-inner{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-image: linear-gradient(#42455a,#42455a), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;  
+}
+.tervgomb-inner .fas{
+    padding: 14px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+small{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #19dafa;
+    letter-spacing: 2px;
+}
+.links{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #db1bf6, #19d7f8);
+}
+.links ul{
+    display: inline-flex;
+    margin: 30px auto;
+    text-align: center;
+}
+.links ul li{
+    list-style: none;
+    margin: 0 35px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+.links ul li .fas{
+    font-size: 25px;
+    color: #fff;
+}
+.links ul li p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+.social-icons{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+.social-icons ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+.social-icons ul li a{
+    color: #999;
+    border-radius: 50%;
+    border: 1px solid #999;
+    padding: 5px;
+    display: block;
+}
+.social-icons ul li a:hover{
+    outline-color: linear-gradient(to right, #db1bf6, #19d7f8);
+    color: #fff;
+    transition: .5s;
+}
+
+#clock {
+    text-align: center;
+    position: fixed;
+    top: 90%;
+    left: 42%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(to right, #db1bf6, #19d7f8);
+    background-size: 100%;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.SignUp{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    bottom: 20%;
+    /*filter: blur(5px);
+    -webkit-filter: blur(5px);*/
+}
+.SignUp h1{
+    color: #1c8adb;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(to right, #db1bf6, #19d7f8);
+    background-size: 100%;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    }
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-btn{
+    background-color: #21afde;
+}
+.user{
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: dimgrey;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

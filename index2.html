@@ -1,0 +1,167 @@
+<html>
+<head>
+    <title>Renault website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/94796649b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".SignUp").hide();  
+  $(".banner2").hide();
+  $(".picture2").hide();
+  $(".picture").click(function(){
+      $(".picture").hide()
+          $(".picture2").fadeIn(),
+          $(".picture2").click(function(){
+              $(".picture2").fadeOut()   
+                  $(".picture").fadeIn()
+    });
+    });
+    $(".gomb").click (function(){
+                $(".banner").fadeOut()  
+                  $(".banner2").fadeOut()   
+                    $(".SignUp").slideDown()
+    
+    });
+    $("#Modellek").click (function(){
+                $(".banner").fadeOut()   
+                  $(".SignUp").fadeOut()
+                    $(".banner2").fadeIn()
+    
+    });
+    $(".active").click (function(){
+              $(".banner").hide()
+                $(".SignUp").fadeOut()
+                $(".banner2").fadeOut()   
+                  $(".banner").fadeIn()
+    
+    });
+    $(document).on('click', 'ul li', function(){
+      $(this).addClass ('active').siblings().removeClass('active')
+    });
+});
+</script>
+</head>
+<body>
+    
+    <div class="container">
+    <!-------------------------------------Menu---------------------------------------->
+        <div class="menu">
+            <ul>
+                <li class="logo"><img id="elso" src="https://i.pinimg.com/originals/e5/f8/d0/e5f8d0ebd65047e6e30e45299b708c35.png"></li>
+                <li class="active">Home</li>
+                <li id="Modellek">Modelljeink</li>
+                <li id="Ajanlat">Ajánlatok</li>
+                <li id="Finan">Finanszírozás</li>  
+                <li id="Szerviz">Renault Szerviz</li>
+                <li><a href="#" class="gomb"><span>Bejelntkezés</span></a></li>  
+            </ul>
+        </div>
+        <!------------------------------------SignUp-------------------------------------->
+            <div class="SignUp">
+                <h1>Bejelentkezés</h1>
+                <div class="user"><i class="far fa-user"></i></div>
+                <form>
+                    <input type="email" class="input-box" placeholder="Felhasználónév">
+                    <input type="password" class="input-box" placeholder="Jelszó">
+                    <p><span><input type="checkbox"></span> Elfogadom az általános szerződési feltételeket</p>
+                    <button type="button" class="sign-btn">Bejelentkezés</button>
+                    <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                </form>
+            </div>  
+        
+    <!-------------------------------------Banner---------------------------------------->
+        <div class="banner">
+            <div class="app-text">
+                <h1>Új Renault CAPTUR már megérkezett</h1>
+                <p1>Minden élményben elkisér</p1> <br>
+                <p2>Kezdő listaár</p2> <br>
+                <p3>5 999 000 Ft</p3> <br>
+            </div>
+                <div class="tervgomb">
+                    <div class="tervgomb-inner"><i class="fas fa-play"></i>
+                        <small><b>Tervezés</b></small>
+                    </div>
+                </div>
+            <div class="picture">
+                <img src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/vhs/Renault-Captur_0.png">
+            </div>
+            <div class="picture2">
+                <img src="https://carwow-uk-1.imgix.net/model-photos/original/renault_13captursuv_1b_lowaggressive_flame-red.png?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=1920">
+            </div>
+        </div>
+    <!-------------------------------------Modellek--------------------------------------->    
+         <div class="banner2">
+            <div class="app-text">
+                <h1>Modelljeink</h1>
+                <div class="Responsiv">
+                    <div class="gallery">
+                        <img src="https://www.renault.hu/agg/vn/unique/ONE_CF_DACIA_NEQ_DENSITY1_LARGE/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fhu.co.rplug.renault.com%2Fproduct%2Fmodel%2FZOE%2Fuj-zoe%2Fc%2FA-ENS_0MDL2P1SERIELIM2_-TENNP">
+                        <div class="autonev">Új ZOE</div>
+                    </div>
+                </div>
+                
+                <div class="Responsiv">
+                    <div class="gallery">
+                        <img src="https://www.renault.hu/agg/vn/unique/ONE_CF_DACIA_NEQ_DENSITY1_LARGE/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fhu.co.rplug.renault.com%2Fproduct%2Fmodel%2FCL5%2Fuj-clio%2Fc%2FA-ENS_0MDL2P1SERIELIM4_-TERQH">
+                        <div class="autonev">CLIO</div>
+                    </div>
+                </div>
+                
+                <div class="Responsiv">
+                    <div class="gallery">
+                        <img src="https://www.renault.hu/agg/vn/unique/ONE_CF_DACIA_NEQ_DENSITY1_LARGE/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fhu.co.rplug.renault.com%2Fproduct%2Fmodel%2FMB4%2Fmegane-berline%2Fc%2FA-ENS_0MDL2P1SERIELIM2_-TECNY">
+                        <div class="autonev">Új MEGANE</div>
+                    </div>
+                </div>
+                
+                <div class="Responsiv">
+                    <div class="gallery">
+                        <img src="https://www.renault.hu/agg/vn/unique/ONE_CF_DACIA_NEQ_DENSITY1_LARGE/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fhu.co.rplug.renault.com%2Fproduct%2Fmodel%2FCP1%2Fuj-captur%2Fc%2FA-ENS_0MDL2P1SERIELIM2_-BIXWB">
+                        <div class="autonev">Új CAPTURE</div>
+                    </div>
+                </div>
+                <div class="Responsiv">
+                    <div class="gallery">
+                        <img src="https://www.renault.hu/agg/vn/unique/ONE_CF_DACIA_NEQ_DENSITY1_LARGE/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fhu.co.rplug.renault.com%2Fproduct%2Fmodel%2FSL4%2Fgrand-scenic%2Fc%2FA-ENS_0MDL2P1SERIELIM2_-BIYUL">
+                        <div class="autonev">Grand SCENIC</div>
+                    </div>
+                </div>
+                <div class="Responsiv">
+                    <div class="gallery">
+                        <img src="https://www.renault.hu/agg/vn/unique/ONE_CF_DACIA_NEQ_DENSITY1_LARGE/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Fhu.co.rplug.renault.com%2Fproduct%2Fmodel%2FFEH%2Fuj-kadjar%2Fc%2FA-ENS_0MDL2P1SERIELIM1_-OV369">
+                        <div class="autonev">KADJAR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-------------------------------------Links--------------------------------------->    
+        <div class="links">
+            <ul>
+                <li><i class="fas fa-search"></i><p>Keresés</p></li>
+                <li><i class="fas fa-map-marker-alt"></i><p>Hol talál minket?</p></li>
+                <li><i class="fas fa-user"></i><p>My Renault</p></li>
+                <li><i class="fas fa-car"></i><p>Online Szalon</p></li>
+            </ul>
+        </div>
+    <!---------------------------------Social Ikons------------------------------------>    
+        <div class="social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/renaulthungary" target=_blank><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/renaulthungary" target=_blank><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/renaulthungary" target=_blank><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/user/renaulthungary" target=_blank><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    <!-------------------------------------Clock--------------------------------------->
+        <div id="clock">12:13:14</div>
+        <script src="ora.js"> </script>   
+    
+        
+   </div>
+</body>
+</html>
